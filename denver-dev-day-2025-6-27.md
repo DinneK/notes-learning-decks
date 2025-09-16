@@ -1,0 +1,392 @@
+# Notes: 6/27/2025
+## Keynote Notes:
+- Speaker: Kahua, Darren ...
+- Built in .net
+- Kahua - meaning foundation
+- Speaker: Steve, Uno Platform
+- .net cross platform network, like flutter
+- Organizers:
+  - 
+
+### Celebrate your expert: Overcoming Imposter Syndrome
+- Speaker: Jay Harris, ARANA
+- What am I an Expert AT?
+- In waht are you an expert?
+  - We justify when we have to answer this question
+  - So am I really an expert
+- Imposter syndrome blocks out logic
+- How do you define expert?
+- "An expert is someone .." Edward de Bono
+- Conflating modesty with ego
+- The Fix:
+  - The 10 doesn't matter
+  - The scale doesn't matter
+  - Expert means authorative knowledge or skills
+  - Give yourself credit
+
+## Modern Architecture 101 for New Engineers & Forgetful Architects
+- Speaker: Jerry Nixon, Principle Product Manager Microsoft SQL Server
+- What is an architect?
+  - Focus on the things that are hard to taste
+  - Choosing patterns that may benefit the project
+- What's a best practice?
+  - Simple is best practice
+  - Continually evolving
+  - All of these things are best practices in the moment and for your company
+  - What is an architects perspective?
+    - What's the structure?
+    - Hosts?
+    - Containers?
+    - eRM?
+    - Delivery?
+    - Client?
+    - DB?
+  - White board:
+    - Introduce:
+      - Client
+      - API
+      - DB
+      - Introduce a nice pattern
+      - CQRS Pattern
+      - Replica Pattern
+      - Eventual consistency
+      - Responsibility Segregation
+      - Micro Service Patterns
+        - Micro services must talk to eachother
+      - If your application has no seams, you've done it wrong
+      - Dead Letter Queue
+      - System Bus
+        - How are all the applications integrated
+      - API Manager (APIM)
+      - Level 1 of 2 Cache
+        - Easiest to implement
+        - Avoid stampeding
+
+      - Level 2 of 2 Cache
+      - Retry Pattern
+        - If it fails it keeps going
+      - Queued Pattern
+        - The ability to queue all of your patterns
+      - Event Hub
+        - Transaction log
+        - Change Tracking
+        - Messaging pattern
+      - Serverless Functions
+      - Static Assets
+        - Somethings never change
+      - Content delivers
+        - CDN (Content Deliverary System)
+      - Row Store
+      - Column Store
+        - Slower to write to
+        - 10x faster to read to
+      - Hash Tables
+
+        - Primary Key
+      - In Memory DB
+      - SSD?
+      - Graph Edges
+        - Dixtra Algorythm
+      - ETL?
+      - JSON Data
+      - Data API Builder
+      - LAnguage Model
+      - Model Context Protocol (MCP)
+      - Offline Pattern
+      - Data Lake
+      - Machine Learning
+      - Data Enrichment
+    - Defer decisions
+
+  - You as the architect are responsible for setting the threshold
+
+
+## Weathering the Storm: Mental Health on the High Seas of Software Development
+- Speakers: Matthew Christiansen, Brooke Avery
+- Captain's Log
+  - Setting Sail
+- Life needs 70% meaning
+- If it's just fun things just fall apart
+- 4 Storms Developers face
+  - Burnout
+    - The relentless storm succing our energy and joy
+    - This is not a badge of honor
+    - Losing interest in things that used to be fun
+    - Disasosiation
+    - Physical symtoms
+    - Not sleeping
+    - Guilty
+    - Dreaming in code
+    - Beyond exhaustion
+    - Cynacism
+    - Reduced performance (both output and quality)
+    - Storm Busters:
+      - Set boundries - say no
+      - Eliminate what isn't serving you anymore
+      - Do things for YOU
+      - Write down everything you like, treat the things you need like a menu
+  - Anxiety
+    - Anxiety is the choppy sea beneath us - sometimes barely noticible, other times overwhelming.
+    - Deadline, code reviews, personal matters and imposter syndrome can all stir up anxiety.
+    - Getting used to things moving fast and changing
+    - Managers with totally unreasonable expectation
+    - "The happiness trap" Book
+    - ACE technique - Acknowledge (your anxiety), Connect (with your body), 
+    - Storm Busters
+      - Present fact and truth ONLY
+      - Grounding & Breathing
+      - Connection - to other people
+      - Reframing your thoughts
+      - Creative arts
+      - Make a list of music
+  - Body & Mind connection
+    - Our bodies are the ships we sail - neglect them and we'll struggle in the storm.
+    - Physical health isn't seperate from mental health - it's the foundation
+    - Storm Busters
+      - Sleep
+      - Nutrition
+      - Movement
+      - Journaling/Mindfulness
+      - Eegonomics
+  - Work/life balance
+    - This is the anchor that keeps your ship from drifting off course
+    - Without it we risk losing ourselves, our families 
+    - Storm Busters
+      - Schedule you time & Family Time
+      - DISCONNECT from devices!!
+      - Establlish a routine
+      - Seek & Nurture New Relationships
+
+## Simplifying Frontend Development with Alpine.js
+- Speaker: Hunter Trammell
+- Key Takeaways:
+  - 
+
+## What’s Your Vector, Victor? A Dive Into Vector Data Support in Azure SQL DB
+- Speaker: Jason Horner
+- Flying High with Azure SQL's 
+- DBA?
+- What is a Vector?
+  - A vector is an ordered list of numbers used tro represent data in a way that machines can understand
+  - Vectors are used to represent:
+    - Words or sentences --> Embedding
+    - Images --> Pixel vectors
+    - User Profiles --> Featur vectors
+  - Why vectors Matter:
+    - Captures semantic meaning numerically
+    - Enables comparison
+  - Vector Example Colors
+    - Red will always === to red, but rbg is not going to be === to 
+  - Vector-search Example - making things similar 
+  - Vector-Measuring Distance
+  - Euclidean?
+  - Vector-Distance Summary
+    - Dot Product
+- Vector Use Cases
+  - Retrieval-augmented generation (RAG)
+    - With RAG you can encode proproetery information
+  - Conversational AI
+  - Recommendation engines
+  - Vector search 
+- Embeddings:
+  - Scenerio:
+    - You want to find support articles to the question:
+      "How can I get back into my account?"
+    ```
+    - Select *
+    - From: support_articles
+    - Where: `title` Like '%get back into my accounts%';
+    ```
+  - How it works:
+    - Only finds rows where the exact phrase or substring appears
+    - Fails in someone wrote "Recover access to account" or "reset logon credentials".
+      - Matches only literal text -- no understanding of meaning or sysnonyms
+- Azure Open AI Embedding Models
+  - Generally speaking start with the baseline
+  - We can create vector presentations of images
+  - Data sources:
+    - Images 
+    - Audio
+    - Videa
+    - Text
+      --> Transform into embedding that has a vector representation
+- Vector Data Typr
+  - Each element is a 4 byte floating point
+  - Vector demensions are from 1 - 1998
+    - Behind the scenes being stored in a bianary representation
+- Vector Data Type - Column Defininition
+  - Convertable from (n)varchar and json data types
+  - Displayed as a JSON array
+  - No DEFUALT, CHECK, PK, FK
+  - No indexes (yet)
+- Vector Data Type - Variable
+  - The vector type can be stored 
+- Vector Data Type - Sprocs and functions
+- Vector Data Type - Functions
+  - VECTOR_DISTANCE
+  - VECTOR_SEARCH
+  - VECTOR_NORM
+
+## Beyond the Framework: Building Resilient Front-End Architectures
+- Speaker: Hunter Trammell
+1. The problem with framework-first thinking
+  - This is something that has become very common
+  - JavaScript Frameworks - need to create reactivity in the DOM
+    - jQuery --> Angular --> React (compiler frameworks)
+  - 2 issues:
+    - Requirenments have changed
+    - Native technologies have come a long way
+  - We've become to using the frameworks
+  - The tools drive the solution
+    - Defaulting to popular tools without analysis can lead to misalignment
+  - Thoughtful architecture is neededto address the growing complexity in frontend systems
+  - How do we solve this problem:
+    1. ddd
+    1. ddd
+    1. dddd
+2. Achetectural thinking
+  - Every developer === Architect
+  - Understanding the requirenments
+    - Technical requirenments
+    - Non-Technical requirenments
+    - Domaine requirenments
+    - Illities
+      - Scalibility
+      - Performance
+      - Accessibility
+  - Archetecture happends at every level of build and design
+    - Trade-offs vs Prioritization
+  - Everything is a trade-oof understanding the "why' is more important than the "how"
+3. Patterns + Priciples for front-end Architecture
+  - Modularity
+  - Seperation of concerns
+  - Reusability + Composability
+  - Simplicity
+  - Event Driven Architecture
+    - Decouples systems
+    - Reflects real behavior in the browser
+    - Collaboration Scale
+  - Atomic Design in Action
+    - Start small and purposful
+    - Compose with intention
+    - Architect for scale
+4. Architecture as a daily habit
+  - Define the problem first
+  - Evaluate fit, not flash
+  - Design the system, then fill the gaps
+  - Manage Dependencies
+    - Evaluate with intent - does this solve the problem
+    - Own your abstractions - create a clear boundry, in case you want/need to remove it
+    - Reassess Regularly
+- Everyday Architecture
+  - Architecture is a team sport
+  - Intention over habit
+  - Principles over habit
+  - Adapt and learn
+
+## Data Strategy, Quality, and Trust Walk Into a Bar…
+- Speakers: Cher Fox - Fox Consulting, Kamal Maheshwari - Decube
+- ERP?
+- InsightJam.com
+- DAMA? DAMA Certified Data MAnagement (CDMP)
+- How would you describe the relationaship between strategy, data quality & Data trust?
+  - You can't have one of these things wihtout the others
+- In an organization everybody is responsible for the data
+- Users lose confidence if they are getting bad data
+- We are not creating data literacy for how data drives 
+- What are the key foundations of a good data strategy?
+  - Don't make strategy a 50 page doc, make it more practcal, it's a pracitce, living thing
+  - Create a measurable way to put a number on data
+  - How is the data going to make anything better for them?
+    - What are your business goals to understand what data you need?
+  - What are the biggest challenges to maintaining Data Quality, especially in environmnets with high quality volume & velocity?
+  - Myths:
+    - It's not a problem for me. Our company is too small.
+    - I know what to do. I did it 10 years ago.
+    - I don't see any value in it.
+  - How can data professionals effectivly communicate the importance of data strategy, quality & trust to non-technical business leaders?
+    - We need to create the context
+  - Looking ahead, what trends do you see emerging in data strategy, quality and trust?
+  - What shoud organizations be preparing for?
+- If you were advising an orgaqnization just starting to build out its data capabilities. whta are the first three steps you recommend?
+  - Usecases
+  - Simplify things
+  - Pay attention to client needs
+- Quantumn?
+
+
+## Design for Non-Designers (from a Non-Designer)
+- Speaker: Jay Harris
+- Technical communication
+- Why?
+  - Recognize the purpose of design
+  - Usability
+  - Functionality
+  - It needs to be usable
+- Fundamentals
+  - Unity
+    - Cohition of structure
+    - Cohesion through style
+      - Cohesion of color
+      - Typeface
+    - You are always tell a story
+  - Contrast
+    - Shade
+    - color
+    - position
+    - size
+    - shape
+  - Alignment
+    - Based on location
+    - 
+  - Proximity
+    - influences interpretation of data
+    - influences iterpretation of the flow
+  - Hierachy
+    - We see this in the images
+    - Text - title is the most important thing
+    - Helps us parce data
+  - Whitespace
+    - congestion
+    - isolation
+- Color 
+  - RBG for screen, subtractive
+  - CYM for Print, additive
+  - RBY - Not additive, not subtractive
+  - Color palette choices
+    - Monochrome
+    - Analogous
+    - Complementary
+    - Split Complementary
+    - Triadic
+    - Tetradic
+- Psyhology of color
+  - There is not a lot of science behind the psychology of color
+  - Most people just use the colors they like
+  - We don't need to care about the psycholoogy about the color, we need to care about accessability
+    - Statistically many pwoplw have a color imparative
+    - Colorblindness
+      - protan
+      - deutan
+      - tritan
+- Typeface
+  - serif - variability in the with if the line, stress, serif. Incredibly easy to read. Great in body copy
+  - san-sarif - monoweight, work great in headers
+  - Scripts - are difficult to read, came about because we used to write with fountain pens, cursive is a work around for technology.
+  - Decorative - not for a professional context.
+  - Conflict
+   - 
+  - Texture
+  - Base font
+  - retraint
+- Compostion
+  - Figure out your focal point to be
+  - Strong alighnment
+  - repetition - this creates unity
+- Context switching === confusion
+
+- Contrast is big differnce
+- Follow the rules
+- Slide:ology - Nancy Duarte
+- The non-designers design book - DR. Robin Williams
+- Practice the concepts
